@@ -5,7 +5,7 @@ void minify(string in,string out){
 	ofstream outdata(out);
 	string line;
 	while (getline(indata,line)){
-        for(int i =0;i<line.size()*2;i++){
+        for(int i =0;i<2000000000;i++){
 			if(line[line.size()-1]==' '){
 				line.erase(line.size()-1,1);
 			}

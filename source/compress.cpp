@@ -193,6 +193,6 @@ void compress(string  inputFile){
 }
 int main()
 {
-    string s = "trial.txt";
-    compress(s);
+    //string s = "trial.txt";
+    //compress(s);
 }

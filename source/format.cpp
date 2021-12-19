@@ -1,15 +1,6 @@
 #include"format.h"
 
-void writeToOutput(string in, string out) {
-	ifstream indata(in);
-	ofstream outdata(out);
-	string line;
-	while (getline(indata, line)) {
-		outdata << line << endl;
-	}
-	indata.close();
-}
-void format(string in, string out) {
+void format(string in,string out){
 	ifstream indata(in);
 	ofstream outdata(out);
 	string line,spaces;
@@ -48,6 +39,11 @@ void format(string in, string out) {
 				}
 			}
 		}
+		//this checks if the lines are already formatted then it prints them without any editing
+		if(line[0] ==' '){
+			outdata<<line<<endl;
+			continue;
+		}
 		//this block gets the end tag if its in the end of the line
 		if(line[line.size()-1] =='>' &&line[0]!='<'){
 			for(int i = line.size()-2;i>0;i--){
@@ -64,14 +60,14 @@ void format(string in, string out) {
 				st.pop();
 			}
 		}
-		cout<<st.top()<<endl; 
+		//cout<<st.top()<<endl; 
 		//this checks if the lines are already formatted then it prints them without any editing
-		if(line[0] ==' '){
+		/*if(line[0] ==' '){
 			outdata<<line<<endl;
 			continue;
-		}
+		}*/
 		//this block is in charge of the output lines
-		else if(lines>0&&line[0]=='<'){
+		 if(lines>0&&line[0]=='<'){
 			spaces = spaces+"    ";
 			//if the tag is getting closed this closes the tag and reduces the spaces before it
 			if (closetag=="/"+st.top()){

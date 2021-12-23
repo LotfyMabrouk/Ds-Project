@@ -1,6 +1,11 @@
+#ifndef CHECKCONSISTENCY_H
+#define CHECKCONSISTENCY_H
 #include<iostream>
 #include<stack>
 #include<string>
+#include<fstream>
+#include <vector>
 using namespace std;
-bool ArePair(char opening, char closing);     // Function to check whether two characters are opening and closing of same type. 
-bool AreTagsBalanced(string exp);            //Function to check if tags are balanced.
+string removeSpaces(string str);         //used to remove spaces because it will be an error
+bool XMLConsistency(string file_name);   //if the output is zero there is no error and if the output of one then there is error
+#endif

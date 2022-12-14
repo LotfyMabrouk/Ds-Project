@@ -8,7 +8,7 @@
 * Minify and format XML files.
 * Compressing The xml file to nearlry 56% of its original size in a .huf format. 
 * Decompress . huf files. 
-* social network Visualization using Graphviz.
+* Social network Visualization using Graphviz.
 ***
 ## Requirements 
 * The program is only windows compatible. 

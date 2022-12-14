@@ -1,6 +1,6 @@
 # XML Editor
 ## Introduction 
-* This xml editor was a team project for CSE331s for the Data strucures course in the Faculty of Engineering ASU.It applies various data strucures like stacks ,qeues,dynamic arrays,trees and Visualises The social network graph of an xml .
+* This xml editor was a team project for CSE331s for the Data strucures course in the Faculty of Engineering ASU.It applies various data strucures like stacks ,queues,dynamic arrays,trees and Visualises The social network graph of an xml .
 ***
 ## Features 
 ##### This program can
